@@ -11,7 +11,7 @@ Check out the documentation at https://github.com/infinitered/gluegun/tree/maste
 To package your CLI up for NPM, do this:
 
 ```shell
-$ npm login
+$ npm dkrv
 $ npm whoami
 $ npm test
 
