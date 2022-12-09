@@ -1,6 +1,6 @@
 {
   "name": "dkrvv",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "dkrv CLI",
   "bin": {
     "dkrv": "bin/dkrv"
@@ -31,7 +31,8 @@
     "husky": "^5.1.3",
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
-    "pretty-quick": "^3.1.0"
+    "pretty-quick": "^3.1.0",
+    "styled-components": "^5.3.6"
   },
   "jest": {
     "testEnvironment": "node"

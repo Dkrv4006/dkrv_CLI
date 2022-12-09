@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'generatets',
+  name: 'create',
   description: 'alo vc',
   run: async (toolbox) => {
     const {
@@ -12,6 +12,7 @@ module.exports = {
       error("Escreva o nome do seu component");
       return
     }
+
 
     await template.generate({
       template: 'component.js.ejs',
@@ -26,6 +27,6 @@ module.exports = {
       props: {name: parameters.first},
 
     })
-    success(`Generated file at models/${parameters.first}-model.js`)
+    success(`Generated ${parameters.first}`)
   },
 }
