@@ -1,6 +1,6 @@
 module.exports = {
-  name: 'create',
-  description: 'alo vc',
+  name: 'template',
+  description: 'comcluidor',
   run: async (toolbox) => {
     const {
       parameters,
@@ -8,22 +8,17 @@ module.exports = {
       print: { success, error }
     } = toolbox
 
-    if(!parameters.first){
-      error("Escreva o nome do seu components");
-      return
-    }
-
 
     await template.generate({
-      template: 'components.js.ejs',
-      target: `src/components/${parameters.first}/index.tsx`,
+      template: 'app.js.ejs',
+      target: `src/App.tsx`,
       props: {name: parameters.first},
 
     })
 
     await template.generate({
-      template: 'style.js.ejs',
-      target: `src/components/${parameters.first}/style.ts`,
+      template: 'styleglobal.js.ejs',
+      target: `src/style/style.ts`,
       props: {name: parameters.first},
 
     })

@@ -1,6 +1,6 @@
 module.exports = {
-    name: 'ins',
-    description: 'alo vc',
+    name: 'install',
+    description: 'Concluido..',
     run: async toolbox => {
         const {
             parameters,
@@ -21,7 +21,7 @@ module.exports = {
   
 
 
-      info(`concluding`)
+      info(`concluding!`)
     },
   }
   

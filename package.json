@@ -1,6 +1,6 @@
 {
-  "name": "dkrvv",
-  "version": "0.0.5",
+  "name": "dkrv",
+  "version": "0.0.7",
   "description": "dkrv CLI",
   "bin": {
     "dkrv": "bin/dkrv"
