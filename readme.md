@@ -1,23 +1,45 @@
 # dkrv CLI
 
-A CLI for dkrv.
+CLI para a criação de components, template e style global
 
 ## Customizing your CLI
 
-Check out the documentation at https://github.com/infinitered/gluegun/tree/master/docs.
-
-## Publishing to NPM
-
-To package your CLI up for NPM, do this:
+Check out the documentation at [Documentação](https://www.npmjs.com/package/dkrv)
 
 ## install
 ```shell
-$ npm dkrv
-$ npm whoami
-$ npm test
-
-$ npm publish
+$ npm install dkrv
 ```
+## Uses
+cria pasta base ```src```
+
+## Comandos
+
+#### Cria componentes
+a criação em `typescript` e [default]() para `javascript` user `create-js`
+```shell 
+$ dkrv create name_folde
+
+created
+src/
+  components/
+        name_folde/
+                index.tsx
+                style.ts
+```
+#### Cria templates
+a criação em `typescript` e [default]() para `javascript` user `create-js`
+```shell 
+$ dkrv create name_folde
+
+created
+src/
+  components/
+        name_folde/
+                index.tsx
+                style.ts
+```
+
 
 # License
 
