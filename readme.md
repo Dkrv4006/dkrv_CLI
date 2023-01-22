@@ -1,10 +1,10 @@
 # dkrv CLI
 
-CLI para a criação de components, template e style global
+* CLI para a criação de components, template e style global
 
-## Customizing your CLI
+## mais informações sobre a CLI
 
-Check out the documentation at [Documentação](https://www.npmjs.com/package/dkrv)
+* Check out the documentation at [Documentação](https://www.npmjs.com/package/dkrv)
 
 ## Prerequisites
 
@@ -15,33 +15,56 @@ Check out the documentation at [Documentação](https://www.npmjs.com/package/dk
 $ npm install dkrv
 ```
 ## Uses
-cria pasta base ```src```
+* cria pasta base ```src```
 
 ## Comandos
 
 #### Cria componentes
-a criação em `typescript` e [default]() para `javascript` user `create-js`
+* a criação em `typescript` e [default]() para `javascript` user `create-js`
 ```shell 
-$ dkrv create name_folde
+$ dkrv create <name_folder>
 ```
-##
-`
-will be created
-src/components/name_folde/
-                index.tsx
-                style.ts
-`
-#### Cria templates
-a criação em `typescript` e [default]() para `javascript` user `create-js`
+#### Cria pages
+* a criação em `typescript` e [default]()
 ```shell 
-$ dkrv create name_folde
-
-created
-
+$ dkrv pages <name_folder>
 ```
 
+#### Cria style global em
+* template e usado para [Reactjs](https://reactjs.com) com [styled-components.com](https://styled-components.com/)
 
-# License
+```shell 
+$ dkrv template
+```
+* template global base
+```shell
+import { createGlobalStyle } from "styled-components";
 
-MIT - see LICENSE
+export const GlobalStyle = createGlobalStyle`
 
+:root{
+   --primary: #019fcf;
+   --secondary: #191923;
+   --third:#252430;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html{
+    background: #353535;
+    overflow: visible;
+}
+
+a{
+    text-decoration: none;
+    text-decoration-color: red;
+}
+
+    
+`
+```

@@ -1,6 +1,6 @@
 {
   "name": "dkrv",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "dkrv CLI",
   "bin": {
     "dkrv": "bin/dkrv"
@@ -21,7 +21,9 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "gluegun": "latest"
+    "dkrv": "^0.0.8",
+    "gluegun": "latest",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",

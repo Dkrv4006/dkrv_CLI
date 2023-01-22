@@ -1,10 +1,10 @@
 
 import { Container } from "./style"
 
-export const <%= props.name  %>: React.FC = () => {
+export const sd: React.FC = () => {
   return (
     <Container>
-      <h1><%= props.name  %></h1>
+       <h1>sd</h1>
     </Container>
   )
 }
